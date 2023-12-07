@@ -1,6 +1,9 @@
 package Homework_les_2;
 
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
+
 public class Calc2 {
     /**
      * Формула складних відсотків
@@ -15,23 +18,37 @@ public class Calc2 {
      */
 
 /**
- * 3. Програму, яка пропонує користувачеві запровадити суму грошового вкладу у гривнях, відсоток річних, які виплачує банк, тривалість вкладу (років).
+ * Програму, яка пропонує користувачеві запровадити суму грошового вкладу у гривнях, відсоток річних, які виплачує банк, тривалість вкладу (років).
  * Вивести накопичену суму грошей за кожен рік та нараховані відсотки. (Відсотки складні з капіталізацією щомісяця)
  * У завданні 3 числа вводити через аргументи програми
  */
-    public static  int pow(int year, int period) {
-       return (int) Math.pow(year, period);
-    }
+//    public static  double pow(double year, double period) {
+//       return (int) Math.pow(year, period);
+
     public static void main (String[]args) {
         if (args.length != 3) {
             System.out.println("Введіть три аргументи: ");
         } else {
-            double sum = Double.parseDouble(args[0]);
-            double inter = Double.parseDouble(args[1]);
-            int year = Integer.parseInt(args[2]);
+            double sum = Double.parseDouble(args[0]); //сума вкладу
+            double inter = Double.parseDouble(args[1]); //процентна ставка
+            int year = Integer.parseInt(args[2]);//кількість років
+            int month = 12 * year;
+            int round = 0;
+            String s;
 
-            System.out.println("При сумі вкладу: " + sum);
-            System.out.println("Загальна сума, яку отримає вкладник через " + year + " років: " + sum * (1 + inter) * pow(year, 12));
+            for (int i = 1; i <= year; i++) {
+                round++;
+                if (round == 1){
+                    s = "рік";
+                } else if (round > 1 & round <= 4){
+                    s = "роки";
+                } else {
+                    s = "років";
+                }
+                System.out.print(sum * Math.pow(1 + inter/month, month * i) + " грн.");
+                System.out.println(" отримано за " + round + " " + s);
+            }
+
         }
     }
 
