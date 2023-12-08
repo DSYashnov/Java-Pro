@@ -14,9 +14,6 @@ public class Calc2 {
      n Ц к≥льк≥сть пер≥од≥в складанн€ (в нашому випадку 1 раз на р≥к)
      */
 
-//    public static  double pow(double year, double period) {
-//       return (int) Math.pow(year, period);
-
     public static void main (String[]args) {
         if (args.length != 3) {
             System.out.println("¬вед≥ть три аргументи: ");
