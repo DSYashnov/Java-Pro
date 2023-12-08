@@ -1,9 +1,5 @@
 package Homework_les_2;
 
-
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
-
 public class Calc2 {
     /**
      * Формула складних відсотків
