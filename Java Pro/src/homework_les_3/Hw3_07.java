@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Hw3_07 {
 
     public static void main(String[] args) {
+        System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
         Scanner s = new Scanner(System.in);
         double num = s.nextDouble();
         int count = 0;
-        System.out.println("Таблица умножения на: " + num);
+        System.out.println("РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёСЏ РЅР°: " + num);
         for (int i = 1; i <= 10; i++){
             double res = num * i;
             count++;
@@ -16,5 +17,4 @@ public class Hw3_07 {
         }
 
     }
-
 }
