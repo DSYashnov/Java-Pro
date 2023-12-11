@@ -10,6 +10,6 @@ public class Hw3_05 {
         for (int i = 0; i < n; ++i) {
             res *= x;
         }
-        System.out.println(x + " â ñòåïåíè " + n + " ðàâíÿåòñÿ " + res);
+        System.out.println(x + " Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ " + n + " Ñ€Ð°Ð²Ð½ÑÐµÑ‚ÑÑ " + res);
     }
 }
