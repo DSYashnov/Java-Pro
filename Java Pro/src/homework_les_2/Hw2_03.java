@@ -40,8 +40,4 @@ public class Hw2_03 {
 
         }
     }
-
-
 }
-
-
