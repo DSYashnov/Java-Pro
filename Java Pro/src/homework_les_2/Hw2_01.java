@@ -3,11 +3,11 @@ package homework_les_2;
 public class Hw2_01 {
 
     public static void main(String[] args) {
-        // Вводимо два числа
+        // Р’РІРѕРґРёРјРѕ РґРІР° С‡РёСЃР»Р°
         double a = Double.parseDouble(args[0]);
         double b = Double.parseDouble(args[1]);
 
-        //Виводимо середнє арифметичне двох чисел
+        //Р’РёРІРѕРґРёРјРѕ СЃРµСЂРµРґРЅС” Р°СЂРёС„РјРµС‚РёС‡РЅРµ РґРІРѕС… С‡РёСЃРµР»
         System.out.println((a + b)/2);
     }
 }

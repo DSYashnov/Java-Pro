@@ -2,25 +2,25 @@ package homework_les_2;
 
 public class Hw2_03 {
     /**
-     * Формула складних відсотків
+     * Р¤РѕСЂРјСѓР»Р° СЃРєР»Р°РґРЅРёС… РІС–РґСЃРѕС‚РєС–РІ
     S = S1 * (1 + W)tn
      */
 
     /**
-     S – наш кінцевий результат
-     S1 – початковий вклад
-     W – відсоткова ставка (у вигляді десяткового дробу, ставка поділена на 100)
-     t – роки
-     n – кількість періодів складання (в нашому випадку 1 раз на рік)
+     S вЂ“ РЅР°С€ РєС–РЅС†РµРІРёР№ СЂРµР·СѓР»СЊС‚Р°С‚
+     S1 вЂ“ РїРѕС‡Р°С‚РєРѕРІРёР№ РІРєР»Р°Рґ
+     W вЂ“ РІС–РґСЃРѕС‚РєРѕРІР° СЃС‚Р°РІРєР° (Сѓ РІРёРіР»СЏРґС– РґРµСЃСЏС‚РєРѕРІРѕРіРѕ РґСЂРѕР±Сѓ, СЃС‚Р°РІРєР° РїРѕРґС–Р»РµРЅР° РЅР° 100)
+     t вЂ“ СЂРѕРєРё
+     n вЂ“ РєС–Р»СЊРєС–СЃС‚СЊ РїРµСЂС–РѕРґС–РІ СЃРєР»Р°РґР°РЅРЅСЏ (РІ РЅР°С€РѕРјСѓ РІРёРїР°РґРєСѓ 1 СЂР°Р· РЅР° СЂС–Рє)
      */
 
     public static void main (String[]args) {
         if (args.length != 3) {
-            System.out.println("Введіть три аргументи: ");
+            System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРё Р°СЂРіСѓРјРµРЅС‚Рё: ");
         } else {
-            double sum = Double.parseDouble(args[0]); //сума вкладу
-            double inter = Double.parseDouble(args[1]); //процентна ставка
-            int year = Integer.parseInt(args[2]);//кількість років
+            double sum = Double.parseDouble(args[0]); //СЃСѓРјР° РІРєР»Р°РґСѓ
+            double inter = Double.parseDouble(args[1]); //РїСЂРѕС†РµРЅС‚РЅР° СЃС‚Р°РІРєР°
+            int year = Integer.parseInt(args[2]);//РєС–Р»СЊРєС–СЃС‚СЊ СЂРѕРєС–РІ
             int month = 12 * year;
             int round = 0;
             String s;
@@ -28,14 +28,14 @@ public class Hw2_03 {
             for (int i = 1; i <= year; i++) {
                 round++;
                 if (round == 1){
-                    s = "рік";
+                    s = "СЂС–Рє";
                 } else if (round > 1 & round <= 4){
-                    s = "роки";
+                    s = "СЂРѕРєРё";
                 } else {
-                    s = "років";
+                    s = "СЂРѕРєС–РІ";
                 }
-                System.out.print(sum * Math.pow(1 + inter/month, month * i) + " грн.");
-                System.out.println(" отримано за " + round + " " + s);
+                System.out.print(sum * Math.pow(1 + inter/month, month * i) + " РіСЂРЅ.");
+                System.out.println(" РѕС‚СЂРёРјР°РЅРѕ Р·Р° " + round + " " + s);
             }
 
         }
