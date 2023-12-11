@@ -1,16 +1,15 @@
 package homework_les_3;
 
 public class Hw3_02 {
-    // Дано число n за допомогою циклу for порахувати факторіал n!
+    // Р”Р°РЅРѕ С‡РёСЃР»Рѕ n Р·Р° РґРѕРїРѕРјРѕРіРѕСЋ С†РёРєР»Сѓ for РїРѕСЂР°С…СѓРІР°С‚Рё С„Р°РєС‚РѕСЂС–Р°Р» n!
     public static void main(String[] args) {
-        System.out.println("Введите число: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
         int value  = Integer.parseInt(args[0]);
         int factorial = 1;
 
         for (int i = 1; i <= value; ++i) {
             factorial *= i;
         }
-        System.out.println("Факториал " + value + "! = " + factorial);
+        System.out.println("Р¤Р°РєС‚РѕСЂРёР°Р» " + value + "! = " + factorial);
     }
-
 }
