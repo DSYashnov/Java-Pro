@@ -1,6 +1,6 @@
-package Homework_les_2;
+package homework_les_2;
 
-public class Calc2 {
+public class Hw2_03 {
     /**
      * Формула складних відсотків
     S = S1 * (1 + W)tn

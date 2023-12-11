@@ -1,7 +1,7 @@
-package Homework_les_2;
+package homework_les_2;
 import java.util.Scanner;
 
-public class Calc1 {
+public class Hw2_02 {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

@@ -1,6 +1,6 @@
-package Homework_les_2;
+package homework_les_2;
 
-public class Calc {
+public class Hw2_01 {
 
     public static void main(String[] args) {
         // ¬водимо два числа
