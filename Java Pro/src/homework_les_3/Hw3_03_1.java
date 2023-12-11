@@ -1,7 +1,7 @@
 package homework_les_3;
 
 public class Hw3_03_1 {
-    //Перепишіть програми 1 та 2 за допомогою циклу while.
+    //РџРµСЂРµРїРёС€С–С‚СЊ РїСЂРѕРіСЂР°РјРё 1 С‚Р° 2 Р·Р° РґРѕРїРѕРјРѕРіРѕСЋ С†РёРєР»Сѓ while.
     public static void main(String[] args) {
 
         int i = 0;
@@ -13,5 +13,3 @@ public class Hw3_03_1 {
         }
     }
 }
-
-
