@@ -23,9 +23,8 @@ public class Hw3_10 {
                     maxElement  = array[i];
                 }
             }
-            System.out.println("Минимальное значение массива: " + maxElement);
+            System.out.println("Максимальное значение массива: " + maxElement);
 
 
         }
     }
-
