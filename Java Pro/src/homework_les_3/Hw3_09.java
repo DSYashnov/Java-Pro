@@ -7,14 +7,14 @@ public class Hw3_09 {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°: ");
         int size = s.nextInt();
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++){
                 int value = (int) (Math.random() * 10);
                 array[i] = value;
             }
-        System.out.println("Получен массив со значениями" + Arrays.toString(array));
+        System.out.println("РџРѕР»СѓС‡РµРЅ РјР°СЃСЃРёРІ СЃРѕ Р·РЅР°С‡РµРЅРёСЏРјРё" + Arrays.toString(array));
 
         int minElement = array[0];
 
@@ -23,7 +23,7 @@ public class Hw3_09 {
                 minElement  = array[i];
             }
         }
-        System.out.println("Минимальное значение массива: " + minElement);
+        System.out.println("РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР°: " + minElement);
     }
 
 }
