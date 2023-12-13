@@ -5,27 +5,25 @@ import java.util.Scanner;
 
 public class Hw3_10 {
 
-        public static void main(String[] args) {
-            Scanner s = new Scanner(System.in);
-            System.out.println("Введите размер массива: ");
-            int size = s.nextInt();
-            int[] array = new int[size];
-            for (int i = 0; i < array.length; i++){
-                int value = (int) (Math.random() * 10);
-                array[i] = value;
-            }
-            System.out.println("Получен массив со значениями" + Arrays.toString(array));
-
-            int maxElement = array[0];
-
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] > maxElement) {
-                    maxElement  = array[i];
-                }
-            }
-            System.out.println("Минимальное значение массива: " + maxElement);
-
-
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°: ");
+        int size = s.nextInt();
+        int[] array = new int[size];
+        for (int i = 0; i < array.length; i++){
+            int value = (int) (Math.random() * 10);
+            array[i] = value;
         }
+        System.out.println("РџРѕР»СѓС‡РµРЅ РјР°СЃСЃРёРІ СЃРѕ Р·РЅР°С‡РµРЅРёСЏРјРё" + Arrays.toString(array));
+
+        int maxElement = array[0];
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > maxElement) {
+                maxElement  = array[i];
+            }
+        }
+        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР°: " + maxElement);
     }
+}
 
