@@ -53,4 +53,3 @@ public class Hw4_11 {
         System.out.println("Массив после замены максимального и минимального элементов: " + Arrays.toString(array));
     }
 }
-

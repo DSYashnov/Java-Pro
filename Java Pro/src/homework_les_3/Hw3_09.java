@@ -11,9 +11,9 @@ public class Hw3_09 {
         int size = s.nextInt();
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++){
-            int value = (int) (Math.random() * 10);
-            array[i] = value;
-        }
+                int value = (int) (Math.random() * 10);
+                array[i] = value;
+            }
         System.out.println("Получен массив со значениями" + Arrays.toString(array));
 
         int minElement = array[0];

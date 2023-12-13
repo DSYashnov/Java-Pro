@@ -13,5 +13,3 @@ public class Hw3_03_1 {
         }
     }
 }
-
-
