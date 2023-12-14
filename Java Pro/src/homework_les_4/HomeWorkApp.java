@@ -24,7 +24,7 @@ public class HomeWorkApp {
             case 7 -> positiveOrNegativeInf(0); //Task_7
             case 8 -> positiveOrNegative(-1); //Task_8
             case 9 -> printLine("Super", 5); //Task_9
-            case 10 -> yearNow(1992);
+            case 10 -> yearNow(1992); //Task_10
         }
     }
 
