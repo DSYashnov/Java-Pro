@@ -24,7 +24,7 @@ public class HomeWorkApp {
             case 7 -> positiveOrNegativeInf(0); //Task_7
             case 8 -> positiveOrNegative(-1); //Task_8
             case 9 -> printLine("Super", 5); //Task_9
-            case 10 -> yearNow(1992); //Task_10
+            case 10 -> yearNow(2023); //Task_10
         }
     }
 
@@ -96,11 +96,8 @@ public class HomeWorkApp {
 
     //Task_10
     public static void yearNow(int y) {
-        if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
-            System.out.println(y + " - this year has 366 days");
-        } else {
-            System.out.println(y + " - this year there are 365 days");
-        }
+        boolean result = (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
+        System.out.println(result);
     }
 }
 
