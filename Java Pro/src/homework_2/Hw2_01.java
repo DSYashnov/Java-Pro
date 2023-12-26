@@ -1,4 +1,4 @@
-package homework_les_2;
+package homework_2;
 
 public class Hw2_01 {
 

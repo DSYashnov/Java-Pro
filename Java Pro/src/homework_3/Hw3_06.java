@@ -1,4 +1,4 @@
-package homework_les_3;
+package homework_3;
 
 public class Hw3_06 {
 
